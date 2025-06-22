@@ -1,0 +1,163 @@
+# Caleb University Feedback & Grievance Redressal System
+
+A comprehensive web-based feedback and grievance redressal system for Caleb University students built with Streamlit.
+
+## 🎓 About Caleb University
+
+**For God and Humanity**
+
+Caleb University is a private university located in Imota, Lagos State, Nigeria, committed to academic excellence and character development.
+
+## 📋 System Overview
+
+This feedback system enables students to submit feedback and grievances while providing administrators with comprehensive tools to manage and track all submissions.
+
+### Features
+
+**For Students:**
+- 📝 Submit feedback securely with categorization
+- 🔍 Track submission status
+- 📱 User-friendly interface with university branding
+
+**For Administrators:**
+- 📈 Review and manage all submissions
+- 📊 Track resolution status and progress
+- 🗄️ Advanced analytics and data export capabilities
+- 🔐 Secure authentication system
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Python 3.11+
+- pip or uv package manager
+
+### Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/caleb-university-feedback-system.git
+cd caleb-university-feedback-system
+```
+
+2. Install dependencies:
+```bash
+pip install -r requirements.txt
+```
+
+3. Run the application:
+```bash
+streamlit run app.py --server.port 5000
+```
+
+4. Open your browser and navigate to `http://localhost:5000`
+
+## 📁 Project Structure
+
+```
+├── app.py                      # Main application entry point
+├── pages/                      # Streamlit multi-page structure
+│   ├── 1_Submit_Feedback.py   # Student feedback submission
+│   ├── 3_Admin_Dashboard.py   # Administrative interface
+│   └── 4_Database_Manager.py  # Advanced database management
+├── utils/                      # Core utilities
+│   ├── database.py            # Basic database operations
+│   ├── advanced_database.py   # Advanced database analytics
+│   ├── data_processor.py      # Data processing utilities
+│   └── text_analysis.py       # Text analysis functions
+├── assets/                     # University branding assets
+│   └── caleb_university_logo.png
+├── .streamlit/                 # Streamlit configuration
+└── feedback_system.db         # SQLite database (auto-created)
+```
+
+## 🔧 Configuration
+
+### Admin Access
+
+The system includes a simple admin authentication:
+- Default admin code: `admin123`
+- Change this in production by modifying `pages/3_Admin_Dashboard.py`
+
+### Database
+
+The system uses SQLite for data persistence:
+- Database file: `feedback_system.db`
+- Automatically created on first run
+- Includes sample data for testing
+
+## 🎨 Branding
+
+The system features authentic Caleb University branding:
+- Official university logo
+- University colors and styling
+- "For God and Humanity" motto
+- Contact information and location details
+
+## 🛠️ Technology Stack
+
+- **Frontend**: Streamlit (Python web framework)
+- **Database**: SQLite with pandas integration
+- **Styling**: Custom CSS with university branding
+- **Charts**: Plotly for interactive visualizations
+- **Data Processing**: Pandas and NumPy
+
+## 📊 Database Schema
+
+### feedback_submissions
+- `id`: Primary key
+- `student_id`: Student identification
+- `student_name`: Student full name
+- `email`: Contact email
+- `category`: Feedback category
+- `subject`: Brief subject line
+- `feedback_text`: Detailed feedback
+- `priority`: Priority level (Low/Medium/High)
+- `is_anonymous`: Anonymous submission flag
+- `submission_date`: Timestamp
+- `status`: Current status
+- `admin_notes`: Administrative notes
+
+## 🚀 Deployment
+
+### Local Development
+```bash
+streamlit run app.py --server.port 5000
+```
+
+### Production Deployment
+
+For production deployment, consider:
+- Using a proper database (PostgreSQL)
+- Implementing secure authentication
+- Setting up HTTPS
+- Configuring environment variables
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/new-feature`)
+3. Commit your changes (`git commit -am 'Add new feature'`)
+4. Push to the branch (`git push origin feature/new-feature`)
+5. Create a Pull Request
+
+## 📄 License
+
+This project is developed for Caleb University. All rights reserved.
+
+## 📞 Contact
+
+**Caleb University**
+- Address: Imota, Lagos State, Nigeria
+- Email: feedback@calebuniversity.edu.ng
+- Website: www.calebuniversity.edu.ng
+
+## 🙏 Acknowledgments
+
+- Caleb University administration for requirements and feedback
+- Streamlit community for the excellent framework
+- All contributors to this project
+
+---
+
+*Developed with ❤️ for Caleb University*
